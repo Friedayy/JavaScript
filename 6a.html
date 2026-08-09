@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hour</title>
+</head>
+<body>
+    <script>
+        let hour = new Date().getHours();
+        if(hour >= 0 && hour < 12){
+            console.log("Good morning");
+        }else if(hour >= 12 && hour < 18){
+            console.log("Good afternoon");
+        }else if(hour >= 18 && hour < 24){
+            console.log("Good night");
+        }else{
+            console.log("Invalid hour");
+        }
+    </script>
+        
+
+</body>
+</html>
