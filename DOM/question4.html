@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Hello</h1>
+    <p class="description">I am a developer</p>
+    <ul>
+    <li class="item">Apple</li>
+    <li class="item">Banana</li>
+    <li class="item">Mango</li>
+</ul>
+     <script>
+        document.querySelector(".title").textContent = "Welcome Amaan";
+        document.querySelector(".description").textContent = "Full Stack Developer";
+        const items = document.querySelectorAll(".item")
+        console.log(items);
+        
+        for(let i = 0; i<items.length; i++){
+            items[i].textContent  = "Fruit"
+        }
+    </script> 
+</body>
+</html>

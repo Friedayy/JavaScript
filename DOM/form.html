@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginForm">
+        <input id="username" type="text">
+        <button type="submit">Login</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        const form = document.querySelector("#loginForm");
+        const input = document.querySelector("#username");
+        const output = document.querySelector("#output");
+
+        form.addEventListener('submit', (event)=> {
+            event.preventDefault();
+            output.textContent  = "Form submitted!";
+        });
+
+    </script>
+</body>
+</html>

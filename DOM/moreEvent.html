@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text">
+    <p id="output"></p>
+    <script>
+        const input = document.querySelector("#username");
+        const text = document.querySelector("#output");
+
+        input.addEventListener("input", (event)=> {
+            text.textContent = event.target.value;
+        })
+    </script>
+</body>
+</html>

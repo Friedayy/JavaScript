@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text">
+    <button id="btn">Submit</button>
+    <p id="output"></p>
+    <script>
+        const input = document.querySelector("#username");
+        const button = document.querySelector("#btn");
+        const output = document.querySelector("#output");
+        button.addEventListener("click", ()=> {
+            output.textContent  = "Hello " + input.value;
+        })
+    </script>
+</body>
+</html>
