@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="itemInput" type="text">
+    <button id="addBtn">Add Item</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        const input = document.querySelector("#itemInput")
+        const button = document.querySelector("#addBtn")
+        const list  = document.querySelector("#list")
+        button.addEventListener("click", ()=> {
+            const newItem = document.createElement("li");
+            newItem.textContent = input.value;
+            list.append(newItem)
+            input.value = "";
+           
+        });
+         list.addEventListener("click", (e)=> {
+            if(e.target.tagName === "LI")
+            e.target.parentNode.remove();
+        })
+    </script>
+
+</body>
+</html>

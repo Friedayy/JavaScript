@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+
+    <button id="addBtn">Add Orange</button>
+    <script>
+        const list = document.querySelector("#list");
+        const button = document.querySelector("#addBtn");
+        const newItem = document.createElement("li");
+        newItem.textContent = "Orange"
+
+        button.addEventListener("click", ()=> {
+            list.append(newItem);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+    <script>
+        const list = document.querySelector("#list");
+        list.addEventListener("click", (event)=> {
+            let click = "You clicked " + event.target.textContent;
+            console.log(click);
+            
+        })
+    </script>
+</body>
+</html>

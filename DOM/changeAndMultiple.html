@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <select id="course">
+        <option value="">Choose a course</option>
+        <option value="CSE">Computer Science</option>
+        <option value="AIML">AI & ML</option>
+        <option value="ECE">Electronics</option>
+    </select>
+
+    <p id="output"></p>
+    <script>
+        const course = document.querySelector("#course");
+        const output = document.querySelector("#output");
+
+        course.addEventListener("change", (event)=> {
+            event.preventDefault();
+            output.textContent = "You selected " + event.target.value;
+            course.value = "";
+
+        })
+    </script>
+</body>
+</html>

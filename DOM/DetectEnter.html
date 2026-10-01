@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text">
+    <p id="output"></p>
+    <script>
+        const input = document.querySelector("#username");
+        const output = document.querySelector("#output");
+       input.addEventListener("keydown", (event)=> {
+        if(event.key === 'Enter'){
+           if(event.target.value === ""){
+             output.textContent = "Please enter your name";
+           }
+            else{
+           output.textContent  = "Welcome, " + event.target.value;
+            input.value = "";
+        }
+        }
+       });
+    </script>
+</body>
+</html>
